@@ -15,9 +15,6 @@ There are many services to choose from, when you want to **book** a service you 
 
 - react-router-dom
 - axios
-- react-validation
-- validator
-- http-proxy-middleware
 - react-bootstrap
 
 ## _WireFrame & Mockup_

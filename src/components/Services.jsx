@@ -17,7 +17,7 @@ export default function Service() {
     if (search !== "") {
       const arr = Services.Pservices.filter((item) => {
         return (
-          item.language.toLowerCase().includes(`${search.toLowerCase()}`) &&
+          item.info.toLowerCase().includes(`${search.toLowerCase()}`) &&
           item.price <= range
         );
       });
@@ -61,7 +61,7 @@ export default function Service() {
         />
 
         <label class="form-label" for="customRange2">
-          Filter by price range
+          Filter by price
         </label>
         <div class="range d-flex">
           <h5 className="me-2"> 50 </h5>{" "}

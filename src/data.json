@@ -2,14 +2,14 @@
   "Pservices": [
     {
       "id": 1,
-      "name": "Full Cleaning",
-      "info": "8hr cleaning. Floors, Walls & Windows. Cabinets & Cupboards. Rooms & Bathrooms. Carpets and Curtains. Sofas.",
+      "name": "Full Cleaning (8hr)",
+      "info": "Floors, Walls, Windows, Cabinets, Cupboards, Rooms, Bathrooms, Carpets, Curtains, and Sofas.",
       "price": 150
     },
     {
       "id": 2,
       "name": "3hr Cleaning",
-      "info": "3hr cleaning. Rooms & Bathrooms. Carpets and Curtains. Sofas",
+      "info": "Rooms, Bathrooms, Carpets, Curtains, and Sofas",
       "price": 60
     },
     {
@@ -21,13 +21,13 @@
     {
       "id": 4,
       "name": "Happy Eid Cleaning",
-      "info": "Carpets and Curtains. Sofas. Guest Room.",
+      "info": "Carpets, Curtains, Sofas and Guest Room.",
       "price": 50
     },
     {
       "id": 5,
       "name": "Pool Cleaning",
-      "info": "Vacuuming & skimming. Brushing the pool's shell. Tile. Trap baskets. Filter inspection and cleaning. Test the water chemistry.",
+      "info": "Vacuuming, Skimming, Brushing the pool's shell, Tile, Trap baskets, Filter inspection and cleaning, and Testing the water chemistry.",
       "price": 100
     },
     {
