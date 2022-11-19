@@ -1,38 +1,308 @@
-.App {
+.hero {
+  margin-top: 0rem;
+  position: relative;
+  text-align: left;
+  color: #00253e;
+}
+.hero-img {
+  width: 100%;
+  height: 39rem;
+}
+
+.hero-text-box {
+  position: absolute;
+  bottom: 40%;
+  left: 12.8rem;
+}
+
+.hero-text-box h3 {
+  color: #00253e;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 2.4rem;
+}
+
+.hero-text-box p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.hero-cta,
+.hero-cta:link,
+.hero-cta:active {
+  background-color: #00253e;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.hero-cta:hover {
+  background-color: #d9e0f0;
+  color: #00253e;
+  border: 1px solid #00253e;
+}
+/******************/
+.features-section {
+  color: #00253e;
+}
+.features-heading {
   text-align: center;
+  width: 20rem;
+  margin: 3.2rem auto;
+}
+.features-heading h3 {
+  color: #00253e !important;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.features-heading p {
+  font-size: 1.4rem;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 4.8rem;
+  font-size: 1rem;
+  margin-left: 3.2rem;
+  margin-right: 3.2rem;
+}
+.feature-img {
+  height: 12.8rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.features-cta {
+  text-align: center;
+  margin-top: 6.4rem;
+}
+.feature-cta,
+.feature-cta:link,
+.feature-cta:active {
+  background-color: #00253e;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2.4rem;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.feature-cta:hover {
+  background-color: #d9e0f0;
+  color: #00253e;
+  border: 1px solid #00253e;
+}
+.feedback-section {
+  background-color: #d9e0f0;
+  margin-top: 3.2rem;
+  padding: 1rem 5rem 3.2rem 5rem;
+  width: 100%;
+}
+.feedback {
+  color: #00253e !important;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+.feedback-card {
+  justify-self: center;
+  border: 1px solid #00253e !important;
+}
+
+/********************************/
+.RegisterCTA-section {
+  background-image: url(../src/assets/bg.png);
+  background-size: cover;
+  width: 100%;
+  padding: 0rem 9.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+.RegisterCTA-box {
+  justify-self: end;
+  background-color: #00253e;
+  color: #fff;
+  height: 18rem;
+  width: 18rem;
+  border-radius: 2.4rem 0 2.4rem 0;
+  text-align: center;
+  padding: 1.8rem;
+  font-size: 1.2rem;
+  align-self: center;
+}
+.RegisterCTA-box h3 {
+  font-size: 1rem;
+}
+.landing-reg,
+.landing-reg:link,
+.landing-reg:active {
+  display: inline-block;
+  background-color: #d9e0f0;
+  color: #00253e;
+  text-decoration: none;
+  padding: 0.5rem 1.4rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+}
+
+.landing-reg:hover {
+  background-color: #00253e;
+  color: #fff;
+  border: 1px solid #d9e0f0;
+}
+.RegisterCTA-img-box {
+  justify-self: start;
+  margin-left: 2.4rem;
+}
+.RegisterCTA-img {
+  height: 27rem;
+}
+/*************************/
+.ServiceCTA-section {
+  width: 100%;
+  padding: 0rem 9.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+.ServicerCTA-img-box {
+  justify-self: end;
+}
+
+.landing-serv,
+.landing-serv:link,
+.landing-serv:active {
+  display: inline-block;
+  background-color: #00253e;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.2rem 1.4rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.landing-serv:hover {
+  background-color: #d9e0f0;
+  color: #00253e;
+  border: 1px solid #00253e;
+}
+
+.light {
+  background-color: #d9e0f0;
+  color: #00253e;
+  justify-self: start;
+  text-decoration: none;
+}
+.light:hover {
+  color: #00253e;
+}
+
+/********************************/
+@media (max-width: 59em) {
+  .hero-text-box {
+    left: 2.4rem;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    font-size: 1rem;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 44em) {
+  .hero-text-box h3 {
+    font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+  .hero-text-box p {
+    font-size: 1.2rem;
+  }
+  .hero-cta,
+  .hero-cta:link,
+  .hero-cta:active {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 34em) {
+  .hero-text-box h3 {
+    font-size: 1.6rem;
+  }
+  .hero-text-box p {
+    font-size: 1rem;
+  }
+  .hero-cta,
+  .hero-cta:link,
+  .hero-cta:active {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    font-size: 1rem;
+  }
+
+  .feedback {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+}
+@media (max-width: 29em) {
+  .hero-text-box {
+    left: 1rem;
+  }
+  .hero-text-box h3 {
+    font-size: 1.2rem;
+  }
+  .hero-text-box p {
+    font-size: 0.8rem;
+  }
+  .hero-cta,
+  .hero-cta:link,
+  .hero-cta:active {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .ServiceCTA-section,
+  .RegisterCTA-section {
+    padding: 0rem 2.4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+  }
+  .RegisterCTA-box {
+    height: 15rem;
+    width: 11rem;
+    padding: 1.2rem;
+    font-size: 1rem;
+    justify-self: start;
+  }
+
+  .landing-reg,
+  .landing-reg:link,
+  .landing-reg:active {
+    padding: 0.5rem 1.4rem;
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+  }
+
+  .landing-reg:hover {
+    background-color: #00253e;
+    color: #fff;
+    border: 1px solid #d9e0f0;
+  }
+  .RegisterCTA-img-box {
+    justify-self: start;
+    margin-left: 2.4rem;
+  }
+  .RegisterCTA-img {
+    height: 20rem;
+    width: 8rem;
   }
 }
