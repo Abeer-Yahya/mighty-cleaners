@@ -62,7 +62,7 @@ export default function Features() {
         </div>
       </div>
       <div className="features-cta">
-        <a href="/" className="feature-cta">
+        <a href="/services" className="feature-cta">
           Our Services
         </a>
       </div>

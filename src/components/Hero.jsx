@@ -14,7 +14,7 @@ export default function Hero() {
         <h3>Mighty Cleaners</h3>
         <br />
         <p>THE BEST HOUSE CLEANING IN JORDAN</p> <br />
-        <a href="/" className="hero-cta">
+        <a href="/services" className="hero-cta">
           Check Our Services
         </a>
       </div>

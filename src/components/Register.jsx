@@ -33,7 +33,7 @@ const Register = () => {
       patterns.password.test(password) &&
       password == ConfirmPassword
     ) {
-      console.log("tets");
+      console.log("test");
       if (checkEmail(email)) {
         let newUser = { name: name, email: email, password: password };
         setAllusersArray([...allUsersArray, newUser]);
@@ -70,7 +70,7 @@ const Register = () => {
   }
 
   return (
-    <Container className="mt-5 w-50">
+    <Container className="mt-5 login-form">
       <h1>Register</h1>
       <Form>
         <Form.Group className="mb-3" controlId="formBasicPassword">

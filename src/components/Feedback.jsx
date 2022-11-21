@@ -11,7 +11,10 @@ export default function Feedback() {
         <p>What Our Clients Say</p>
       </div>
       <div className="feedback">
-        <Card style={{ width: "18rem" }} className="feedback-card">
+        <Card
+          style={{ width: "18rem", backgroundColor: "white" }}
+          className="feedback-card"
+        >
           <Card.Body>
             <Card.Title>Obada Ahmad</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">

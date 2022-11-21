@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
 import Register from "./components/Register";
 import Login from "./components/Login";
+import Booking from "./components/Booking";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 
         <Route exact path="/register" element={<Register />}></Route>
         <Route exact path="/login" element={<Login />}></Route>
+        <Route exact path="/book" element={<Booking />}></Route>
       </Routes>
       <Footer />
     </div>

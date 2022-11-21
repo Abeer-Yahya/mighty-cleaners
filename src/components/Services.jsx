@@ -1,21 +1,45 @@
 import React, { useEffect, useState } from "react";
-import Services from "../data.json";
+// import Services from "../data.json";
+import axios from "axios";
 
 export default function Service() {
+  /*Servicas card, search, filter */
   const [services, setServices] = useState([]);
   const [search, setSearch] = useState("");
   const [range, setRange] = useState(200);
+  /*Booking Modal */
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  // axios
+  //   .get("data.json")
+  //   .then((res) => {
+  //     setData(res.data);
+  //   })
+  //   .catch(() => {
+  //     alert("There was an error while retrieving the data");
+  //   });
 
   // to render the data once
   useEffect(() => {
-    setServices(Services.Pservices);
+    // setServices(Services.Pservices);
+    axios
+      .get("data.json")
+      .then((res) => {
+        setServices(res.data.Pservices);
+        // console.log(res.data.Pservices);
+      })
+      .catch(() => {
+        alert("There was an error while retrieving the data");
+      });
   }, []);
 
   // to show only matching results
   useEffect(() => {
-    setServices(Services.Pservices);
     if (search !== "") {
-      const arr = Services.Pservices.filter((item) => {
+      console.log(services);
+      const arr = services?.filter((item) => {
         return (
           item.info.toLowerCase().includes(`${search.toLowerCase()}`) &&
           item.price <= range
@@ -26,7 +50,7 @@ export default function Service() {
 
     // show all services
     else {
-      const arr = Services.Pservices.filter((item) => item.price < range);
+      const arr = services?.filter((item) => item.price < range);
       setServices(arr);
     }
 
@@ -37,22 +61,33 @@ export default function Service() {
     // only apply this if the search changed
   }, [search, range]);
 
-  //Cards system
+  //Services Cards system
   const card = services.map((service, i) => (
-    <div className="card col-md-3 m-5 p-auto" key={i}>
+    <div className="card card-s col-md-3 m-4 p-auto" key={i}>
       <div className="card-body">
         <h4 className="card-title">{service.name}</h4>
-        <h5 className="card-title">{service.info}</h5>
-        <p className="card-text">{service.price}</p>
+        <br />
+        <h6
+          className="card-title"
+          style={{ fontSize: "1.2rem", marginBottom: "1.4rem" }}
+        >
+          {service.info}
+        </h6>
+        <p className="card-text" style={{ textAlign: "right" }}>
+          {service.price} JD
+        </p>
+        <a className="book-btn" href="/book">
+          Book
+        </a>
       </div>
     </div>
   ));
 
   return (
     <>
-      <form class="d-flex flex-column w-50 mx-auto" role="search">
+      <form className="search-box" role="search">
         <input
-          class="form-control mx-auto mb-5"
+          className="form-control"
           style={{ marginTop: "20px" }}
           type="search"
           placeholder="Search"
@@ -60,14 +95,14 @@ export default function Service() {
           onChange={(e) => setSearch(e.target.value)}
         />
 
-        <label class="form-label" for="customRange2">
+        <label className="form-label" htmlFor="customRange2">
           Filter by price
         </label>
-        <div class="range d-flex">
+        <div className="range">
           <h5 className="me-2"> 50 </h5>{" "}
           <input
             type="range"
-            class="form-range"
+            className="form-range"
             min="50"
             max="200"
             step="1"
@@ -77,7 +112,7 @@ export default function Service() {
           <h5 className="ms-2">{range}</h5>
         </div>
       </form>
-      <div className="row d-flex justify-content-center">{card}</div>
+      <div className="services-card row">{card}</div>
     </>
   );
 }

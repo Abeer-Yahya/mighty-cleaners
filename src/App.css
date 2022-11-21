@@ -110,6 +110,7 @@
 .feedback-card {
   justify-self: center;
   border: 1px solid #00253e !important;
+  background-color: #fff !important;
 }
 
 /********************************/
@@ -305,4 +306,93 @@
     height: 20rem;
     width: 8rem;
   }
+}
+/********************/
+/* Services*/
+/*******************/
+.search-box {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 0 auto;
+  margin-left: 70%;
+}
+.form-control {
+  margin: 0 auto;
+  margin-bottom: 1.4rem;
+}
+.range {
+  display: flex;
+}
+.services-card {
+  display: flex;
+  justify-content: center;
+}
+.card-s {
+  border: 1px solid #00253e !important;
+  background-color: #d9e0f0 !important;
+  color: #00253e !important;
+  border-radius: 2.4rem 0 2.4rem 0 !important;
+}
+.book-btn {
+  display: inline-block;
+  background-color: #00253e !important;
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+.book-btn:link,
+.book-btn:active {
+  text-decoration: none;
+}
+.book-btn:hover,
+.book-btn:visited {
+  background-color: #d9e0f0;
+  color: #00253e;
+  border: 1px solid #00253e;
+}
+/****************/
+.login-form {
+  width: 30% !important;
+  background-color: #d9e0f0;
+  border-radius: 2.4rem 0 2.4rem 0 !important;
+  border: 1px solid #00253e;
+  padding: 2.4rem 3.2rem;
+  margin-bottom: 3.2rem;
+}
+/*****************/
+.contact-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  color: #00253e !important;
+}
+
+.social-contact {
+  background-color: #d9e0f0;
+  border-radius: 2.4rem 0 2.4rem 0 !important;
+  border: 1px solid #00253e;
+  border-right: none;
+  width: 25rem;
+  height: 24rem;
+  padding: 2.4rem;
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+  justify-self: end;
+}
+
+.social-contact h4 {
+  margin-bottom: 3.2rem;
+}
+.form-contact {
+  width: 55%;
+  background-color: #d9e0f0;
+  border: 1px solid #00253e;
+  border-left: 1px solid #d9e0f0;
+  height: 20rem;
+  padding: 1.6rem !important;
+  justify-self: start;
+  margin-top: 8.5rem;
+  margin-bottom: 6.4rem;
 }

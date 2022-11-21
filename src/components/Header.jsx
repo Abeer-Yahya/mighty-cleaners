@@ -5,6 +5,9 @@ import Navbar from "react-bootstrap/Navbar";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { useCookies } from "react-cookie";
+import logo from "../assets/logo.png";
+import Logout from "./Logout";
+
 export default function Header() {
   const [cookies, setCookie, removeCookie] = useCookies(["currentUser"]);
   const handelLogout = () => {
@@ -14,9 +17,15 @@ export default function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" className="navbar">
       <Container>
-        <NavLink to={"/"} className="brand nav-link">
-          <Navbar.Brand>Mighty Cleaners</Navbar.Brand>
-        </NavLink>
+        <Navbar.Brand href="/">
+          <img
+            alt=""
+            src={logo}
+            width="100"
+            height="80"
+            className="d-inline-block align-left"
+          />{" "}
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
@@ -37,33 +46,20 @@ export default function Header() {
               </NavLink>
             </Nav.Link>
 
-            <Nav.Link className="nav-cta">
+            <Nav.Link>
               {cookies.currentUser == null && (
-                <NavLink to={"/login"} className="nav-link">
+                <NavLink to={"/login"} className=" nav-link">
                   Login
                 </NavLink>
               )}
             </Nav.Link>
             <Nav.Link>
-              {cookies.currentUser != null && (
-                <NavLink
-                  onClick={handelLogout}
-                  to={"/login"}
-                  className="nav-link"
-                >
-                  Logout
-                </NavLink>
-              )}
-            </Nav.Link>
-            <Nav.Link
-              eventKey={2}
-              href="./Register"
-              className="nav-link"
-              style={{ visibility: "hidden" }}
-            >
-              <NavLink className="nav-cta" to={"/register"}>
-                Register
-              </NavLink>
+              {cookies.currentUser != null &&
+                (cookies.currentUser.googleId != "" ? (
+                  <Logout />
+                ) : (
+                  <button onClick={handelLogout}> logout</button>
+                ))}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -8,7 +8,7 @@ export default function RegisterCTA() {
       <div className="RegisterCTA-box">
         <h3>REGISTER</h3> <br />
         <p>To Book one of our servecies you need to ceate -free- account!</p>
-        <a className="landing-reg" href="/">
+        <a className="landing-reg" href="/register">
           Sign Up
         </a>
       </div>

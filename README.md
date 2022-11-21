@@ -16,6 +16,9 @@ There are many services to choose from, when you want to **book** a service you 
 - react-router-dom
 - axios
 - react-bootstrap
+- react-google-login
+- gapi-script
+- react-cookies
 
 ## _WireFrame & Mockup_
 

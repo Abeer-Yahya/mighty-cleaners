@@ -18,11 +18,11 @@ export default function ServicesCTA() {
           Don’t delay.
           <br /> Book today.
         </p>
-        <a className="landing-serv" href="/">
+        <a className="landing-serv" href="/services">
           Request a quote
         </a>
         <p>OR</p>
-        <a className="light" href="">
+        <a className="light" href="/contact">
           Contact us
         </a>
       </div>

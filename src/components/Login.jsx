@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import Logingoogle from "./LoginGoogle";
 
 const MySwal = withReactContent(Swal);
 
@@ -41,7 +42,7 @@ export default function Login() {
   };
 
   return (
-    <Container className="mt-5 w-50">
+    <Container className="mt-5  login-form">
       <h1>Login</h1>
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -75,6 +76,7 @@ export default function Login() {
         >
           Submit
         </Button>
+        <Logingoogle />
       </Form>
     </Container>
   );
