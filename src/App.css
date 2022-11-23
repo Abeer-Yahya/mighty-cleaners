@@ -49,7 +49,6 @@
 }
 .features-heading {
   text-align: center;
-  width: 20rem;
   margin: 3.2rem auto;
 }
 .features-heading h3 {
@@ -111,6 +110,8 @@
   justify-self: center;
   border: 1px solid #00253e !important;
   background-color: #fff !important;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  /* width: 18rem; */
 }
 
 /********************************/
@@ -131,9 +132,11 @@
   width: 18rem;
   border-radius: 2.4rem 0 2.4rem 0;
   text-align: center;
-  padding: 1.8rem;
+  padding: 2rem;
   font-size: 1.2rem;
   align-self: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: inline-block;
 }
 .RegisterCTA-box h3 {
   font-size: 1rem;
@@ -229,6 +232,9 @@
     padding: 0.5rem;
     font-size: 1rem;
   }
+  /* .feedback-card {
+    width: 16rem;
+  } */
 }
 @media (max-width: 34em) {
   .hero-text-box h3 {
@@ -306,6 +312,9 @@
     height: 20rem;
     width: 8rem;
   }
+  .ServicerCTA-img-box {
+    justify-self: end;
+  }
 }
 /********************/
 /* Services*/
@@ -333,6 +342,7 @@
   background-color: #d9e0f0 !important;
   color: #00253e !important;
   border-radius: 2.4rem 0 2.4rem 0 !important;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .book-btn {
   display: inline-block;
@@ -359,6 +369,7 @@
   border: 1px solid #00253e;
   padding: 2.4rem 3.2rem;
   margin-bottom: 3.2rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 /*****************/
 .contact-container {
@@ -380,6 +391,7 @@
   margin-top: 6.4rem;
   margin-bottom: 6.4rem;
   justify-self: end;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .social-contact h4 {
@@ -395,4 +407,29 @@
   justify-self: start;
   margin-top: 8.5rem;
   margin-bottom: 6.4rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+/*****************/
+.booking-form {
+  width: 40%;
+  background-color: #d9e0f0;
+  border: 1px solid #00253e;
+  border-radius: 2.4rem 0 2.4rem 0 !important;
+  padding: 1.6rem !important;
+  margin: 0 auto;
+  margin-bottom: 7.2rem;
+  margin-top: 4.4rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+/****************************/
+.GoBtn {
+  display: inline-block;
+  color: #fff !important;
+  border-radius: 0 8px 8px 0 !important;
+  background-color: #00253e !important;
+}
+.logoutBtn {
+  box-shadow: none !important;
+  color: #00253e !important;
+  font-size: 1.2rem !important;
 }

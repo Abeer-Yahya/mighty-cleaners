@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import registerCTA from "../assets/registerCTA.jpg";
+import { NavLink } from "react-router-dom";
 
 export default function RegisterCTA() {
   return (
@@ -8,9 +9,9 @@ export default function RegisterCTA() {
       <div className="RegisterCTA-box">
         <h3>REGISTER</h3> <br />
         <p>To Book one of our servecies you need to ceate -free- account!</p>
-        <a className="landing-reg" href="/register">
+        <NavLink to={"/register"} className="landing-reg">
           Sign Up
-        </a>
+        </NavLink>
       </div>
       <div className="RegisterCTA-img-box">
         <img

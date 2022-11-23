@@ -7,19 +7,6 @@ export default function Service() {
   const [services, setServices] = useState([]);
   const [search, setSearch] = useState("");
   const [range, setRange] = useState(200);
-  /*Booking Modal */
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
-  // axios
-  //   .get("data.json")
-  //   .then((res) => {
-  //     setData(res.data);
-  //   })
-  //   .catch(() => {
-  //     alert("There was an error while retrieving the data");
-  //   });
 
   // to render the data once
   useEffect(() => {
@@ -28,7 +15,6 @@ export default function Service() {
       .get("data.json")
       .then((res) => {
         setServices(res.data.Pservices);
-        // console.log(res.data.Pservices);
       })
       .catch(() => {
         alert("There was an error while retrieving the data");

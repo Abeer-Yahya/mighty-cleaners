@@ -1,6 +1,7 @@
 import React from "react";
 import hero from "../assets/hero.png";
 import "../App.css";
+import { NavLink } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -14,9 +15,13 @@ export default function Hero() {
         <h3>Mighty Cleaners</h3>
         <br />
         <p>THE BEST HOUSE CLEANING IN JORDAN</p> <br />
-        <a href="/services" className="hero-cta">
+        <NavLink
+          to={"/services"}
+          className="hero-cta"
+          style={{ textDecoration: "none" }}
+        >
           Check Our Services
-        </a>
+        </NavLink>
       </div>
     </div>
   );

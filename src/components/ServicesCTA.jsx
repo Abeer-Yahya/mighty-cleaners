@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import serviceCTA from "../assets/serviceCTA.jpg";
+import { NavLink } from "react-router-dom";
 
 export default function ServicesCTA() {
   return (
@@ -18,13 +19,15 @@ export default function ServicesCTA() {
           Don’t delay.
           <br /> Book today.
         </p>
-        <a className="landing-serv" href="/services">
+        <NavLink to={"/services"} className="landing-serv">
           Request a quote
-        </a>
-        <p>OR</p>
-        <a className="light" href="/contact">
+        </NavLink>
+        <br />
+        <span>OR</span>
+        <br />
+        <NavLink to={"/contact"} className="light">
           Contact us
-        </a>
+        </NavLink>
       </div>
     </section>
   );

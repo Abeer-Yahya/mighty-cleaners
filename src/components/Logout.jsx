@@ -22,8 +22,9 @@ function Logout() {
         clientId={clientId}
         buttonText="Logout"
         onLogoutSuccess={onSuccess}
-        style={{ width: "5px" }}
+        // style={{ width: "5px" }}
         icon={false}
+        className="logoutBtn"
       ></GoogleLogout>
     </div>
   );

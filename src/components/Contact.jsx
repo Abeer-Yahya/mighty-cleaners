@@ -57,7 +57,7 @@ export default function Contact() {
             <Form.Control
               id={"subject"}
               type={"text"}
-              placeholder="Subject"
+              placeholder="Write your message"
               style={{ height: "80px" }}
             />
           </Form.Group>

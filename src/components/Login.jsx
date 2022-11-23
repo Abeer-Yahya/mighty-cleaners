@@ -67,15 +67,15 @@ export default function Login() {
           <br></br>
         </Link>
         <br></br>
-
         <Button
           variant="success"
-          style={{ backgroundColor: "#00253e " }}
+          style={{ backgroundColor: "#00253e ", marginBottom: "1rem" }}
           type="button"
           onClick={handelSubmit}
         >
           Submit
         </Button>
+        <p style={{ color: "#00253e" }}>OR</p>
         <Logingoogle />
       </Form>
     </Container>

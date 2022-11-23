@@ -33,20 +33,18 @@ function Logingoogle() {
 
   const onFailure = (res) => {
     console.log("Login failed: res:", res);
-    alert(
-      "Failed to login. 😢 Please ping this to repo owner twitter.com/sivanesh_fiz"
-    );
+    alert("Failed to login.");
   };
 
   return (
     <div>
       <GoogleLogin
         clientId={clientId}
-        buttonText="Login"
         onSuccess={onSuccess}
         onFailure={onFailure}
         cookiePolicy={"single_host_origin"}
         style={{ marginTop: "100px" }}
+        className="GoBtn"
         isSignedIn={true}
       />
     </div>

@@ -4,6 +4,7 @@ import feature1 from "../assets/feature1.jpg";
 import feature2 from "../assets/feature2.jpg";
 import feature3 from "../assets/feature3.png";
 import feature4 from "../assets/feature4.png";
+import { NavLink } from "react-router-dom";
 
 export default function Features() {
   return (
@@ -62,9 +63,9 @@ export default function Features() {
         </div>
       </div>
       <div className="features-cta">
-        <a href="/services" className="feature-cta">
+        <NavLink to={"/services"} className="feature-cta">
           Our Services
-        </a>
+        </NavLink>
       </div>
     </section>
   );
